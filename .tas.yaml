@@ -1,0 +1,16 @@
+---
+framework: jest
+tier: medium
+postMerge: 
+  pattern: 
+    - "./test/*/*.test.js"
+preMerge:
+  pattern:
+    - "./test/*/*.test.js"
+preRun:
+     command:
+        - npm install
+postRun:
+     command:
+        - node --version
+version: 1.0
